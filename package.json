@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/sbienaime/WebScrapingTool/issues"
   },
-  "homepage": "https://github.com/sbienaime/WebScrapingTool#readme"
+  "homepage": "https://github.com/sbienaime/WebScrapingTool#readme",
+  "devDependencies": {
+    "electron": "^5.0.6"
+  },
+  "dependencies": {
+    "mongoose": "^5.6.1"
+  }
 }
