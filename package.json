@@ -1,0 +1,20 @@
+{
+  "name": "WebScrapingTool",
+  "version": "1.0.0",
+  "description": "This repository will be used to track the development of a webscraping tool built using puppeteer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbienaime/WebScrapingTool.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sbienaime/WebScrapingTool/issues"
+  },
+  "homepage": "https://github.com/sbienaime/WebScrapingTool#readme"
+}
