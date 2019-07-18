@@ -26,7 +26,7 @@ const itemID ='032W002768444001P';
 const LENGTH_SELECTOR_CLASS = 'user-list-item';
 
 const browser = await puppeteer.launch({
-  headless:true
+  headless:false
 });
 
 
