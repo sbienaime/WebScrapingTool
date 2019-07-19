@@ -4,7 +4,7 @@
   "description": "This repository will be used to track the development of a webscraping tool built using puppeteer",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron"
   },
   "repository": {
     "type": "git",

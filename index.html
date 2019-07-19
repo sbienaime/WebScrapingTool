@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Data Finder by S.B.</title>
+
+
+  </head>
+<body>
+
+
+
+<center><h1>Data Finder</h1>
+
+<form> <p>Upload your csv file here</p>
+    <input type="text" placeholder="yourcsv.csv" name="selectedfile"/>
+   <input id="file-input" type="button" name="name" value="Upload Csv"/></form>
+
+
+
+
+</center>
+
+
+
+  </body>
+
+  <script>
+      let Data = {
+                message: "Hi",
+                someData: "Let's go"
+            };
+
+    const { ipcRenderer } = require('electron');
+    const {dialog} = require("electron").remote;
+    document.getElementById("file-input").addEventListener("click",() =>{
+
+
+    try{dialog.showOpenDialog(function (fileNames) {
+
+
+                            if(fileNames === undefined){
+                        alert("No file selected");
+
+                                return;
+
+
+                    }else{
+
+document.getElementsByName("selectedfile")[0].placeholder=fileNames[0];
+
+                      ipcRenderer.send('request-mainprocess-action', fileNames[0]);}
+
+
+
+
+                }); }
+
+
+  catch(err) {
+ alert("An error occured when trying to open up your file , please try again or use a different file.");
+      return;
+}
+
+
+},false ); </script>
+</html>
